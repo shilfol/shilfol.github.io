@@ -11,6 +11,7 @@ window.onload = function(){ // ウィンドウがロードされたら呼び出�
     bear.x = 50; //x座標を指定
     bear.y = 50; //y座標を指定
     game.rootScene.addChild(bear); //画面に画像を表示する
+    game.rootScene.backgroundColor = '#7ecef4';
   }
 
   game.start(); //ゲーム開始
