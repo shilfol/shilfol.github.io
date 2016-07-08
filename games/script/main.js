@@ -192,8 +192,16 @@ var Field = Class.create({
         }
       }
     }
-
   }
+  curscene.addEventListener('enterframe', function(){
+        for (var i = 0; i < lv; i++) {
+      for (var j = 0; i < lv; j++) {
+          this.info[i][j].image.x = j*64 + cam.x;
+          this.info[i][j].image.y = i*64 + cam.y;
+        }
+      }
+  })
+  
 });
 
 /////////////////////
