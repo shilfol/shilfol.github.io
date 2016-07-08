@@ -52,10 +52,9 @@ window.onload = function() { // ウィンドウがロードされたら呼び出
       scene.addChild(chieri); //画面に画像を表示する
 
       //クローバー絡み
-      var fieldscam = new Cam(170, 120);
+      var fieldscam = new Cam(scene,170, 120);
       var camlabel = new Label(fieldscam.x+"::"+fieldscam.y);
       scene.addChild(fieldscam);
-      scene.addChild(camlabel);
 
       var clfields = new Field(scene,lv,fieldscam);
 
@@ -149,10 +148,10 @@ var FLeaf = Class.create(Clover, {
 });
 
 var Cam = Class.create({
-  initialize: function(x, y) {
-    this.x = x;
-    this.y = y;
+  initialize: function(scene,x, y) {
+    this = new Sprite(x,y);
     this.v = 4;
+    scene.addchild(this);
   }
 
 });
