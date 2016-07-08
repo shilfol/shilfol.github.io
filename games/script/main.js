@@ -149,9 +149,9 @@ var FLeaf = Class.create(Clover, {
 
 var Cam = Class.create({
   initialize: function(scene,x, y) {
-    this = new Sprite(x,y);
-    this.v = 4;
-    scene.addchild(this);
+    this.field = new Sprite(x,y);
+    this.field.v = 4;
+    scene.addchild(this.field);
   }
 
 });
