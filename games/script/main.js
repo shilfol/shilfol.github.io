@@ -54,6 +54,7 @@ window.onload = function() { // ウィンドウがロードされたら呼び出
       //クローバー絡み
       var fieldscam = new Cam(170, 120);
       var camlabel = new Label(fieldscam.x+"::"+fieldscam.y);
+      scene.addChild(fieldscam);
       scene.addChild(camlabel);
 
       var clfields = new Field(scene,lv,fieldscam);
