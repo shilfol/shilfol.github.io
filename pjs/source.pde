@@ -7,6 +7,7 @@ void setup(){
 
 void draw(){
   text("now: "+mouseX+","+mouseY, 30,30);
+  loop();
 }
 
 void mouseClicked(){
