@@ -1,11 +1,11 @@
 void setup(){
   size(480,480);
-  background(125);
-  frameRate(30);
-  fill(255);
 }
 
 void draw(){
+  background(125);
+  frameRate(30);
+  fill(255);
   text("now: "+mouseX+","+mouseY, 30,30);
   loop();
 }
